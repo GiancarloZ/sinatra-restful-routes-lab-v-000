@@ -1,3 +1,3 @@
 class Recipe < ActiveRecord::Base 
-  attr_accessor :name, :ingredients, :cook_time
+  validates_presence_of :name, :ingredients, :cook_time
 end
